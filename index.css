@@ -53,6 +53,26 @@ button{
 
 .tite{
     color: black;
+    animation: tite;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes tite{
+    25%{
+        color: black;
+    }
+    50%{
+        color: red;
+    }
+    75%{
+        color: deepskyblue;
+    }
+    100%{
+        color: rgb(255, 28, 179);
+    }
 }
 
 .popup{
@@ -62,7 +82,7 @@ button{
     color: white;
     margin-left: 10%;
     position: absolute;
-    margin-top: -50%;
+    margin-top: -70%;
     display: none;
     transition: 0.5s;
     border-radius: 0.2rem;
@@ -71,6 +91,7 @@ button{
 .shet{
     background-color: red;
     padding: 2% 2% 2% 2%;
+    margin-top: 5%;
 }
 
 p{
